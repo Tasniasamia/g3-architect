@@ -57,7 +57,7 @@ header{
     color: #131313;
 }
 .banner-txt p {
-	font-family: 'Work Sans';
+    font-family: 'Poppins', sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 13px;
@@ -103,7 +103,7 @@ margin:2% 0 5%;
 	margin-left: 56px;
 }
 .feature-txt p{
-    font-family: 'Work Sans';
+    font-family: 'Poppins', sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 16px;
@@ -112,7 +112,7 @@ color: #727272;
 margin: 3% 0;
 }
 .feature-txt h2{
-    font-family: 'Work Sans';
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 45px;
@@ -132,6 +132,7 @@ span.span2{
     display: flex;
     
     justify-content: space-evenly;
+   
 
 }
 .feature-love-txt{
@@ -146,8 +147,7 @@ span.span2{
 }
 .feature-love-txt div h3{
     
-font-family: 'Work Sans';
-font-style: normal;
+    font-family: 'Poppins', sans-serif;font-style: normal;
 font-weight: 700;
 font-size: 45px;
 line-height: 53px;
@@ -157,7 +157,7 @@ color: #131313;
 }
 
 .feature-love-txt div p{
-    font-family: 'Work Sans';
+    font-family: 'Poppins', sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 14px;
@@ -178,7 +178,7 @@ color: #727272;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
 }
 .sub-part1 h4{
-    font-family: 'Work Sans';
+    font-family: 'Poppins', sans-serif;
 font-style: normal;
 font-weight: 600;
 font-size: 20px;
@@ -187,17 +187,17 @@ color: #131313;
 }
 .feature-love-img{
     width: 40%;
-   
+   position: relative;
 }
 .feature-love-img img{
    width: 100%;
-  
+   
 }
 /*feature-love-end*/
 button.btn-secondary {
 	background-color: var(--yellow);
 	padding: 27px;
-	font-family: 'Work Sans';
+	font-family: 'Poppins', sans-serif;
 	font-style: normal;
 	font-weight: 900;
 	font-size: 40px;
@@ -208,8 +208,8 @@ button.btn-secondary {
 	margin: 2% 0 5%;
 	line-height: 25px;
 	position: absolute;
-	left: 50%;
-	top: 379%;
+	left: -10%;
+	top: 90%;
 }
 button.btn-secondary span{
     font-size: 20px;
@@ -228,7 +228,7 @@ button.btn-secondary span{
     width: 40%;
 }
 .facts h2{
-    font-family: 'Work Sans';
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 35px;
@@ -236,7 +236,7 @@ button.btn-secondary span{
     color: #131313;
 }
 .facts p{
-    font-family: 'Work Sans';
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -259,7 +259,7 @@ justify-content: space-evenly;
    transition: 1s;
 }
 .fact h4{
-    font-family: 'Work Sans';
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 30px;
@@ -270,7 +270,7 @@ justify-content: space-evenly;
 }
 .fact p{
 
-    font-family: 'Work Sans';
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -288,7 +288,7 @@ justify-content: space-evenly;
     align-items: center;
 }
 .sponsers-title h2{
-    font-family: 'Work Sans';
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 45px;
@@ -296,7 +296,7 @@ justify-content: space-evenly;
     color: #131313;
 }
 .sponsers-title p {
-	font-family: 'Work Sans';
+    font-family: 'Poppins', sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
@@ -314,7 +314,7 @@ justify-content: space-evenly;
     padding-bottom: 150px;
 }
 footer div p{
-    font-family: 'Work Sans';
+    font-family: 'Poppins', sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 16px;
@@ -323,4 +323,114 @@ text-align: center;
 color: #424242;
 padding:20px;
 background-color: #fff4e7;
+}
+@media only screen and (max-width:576px) {
+    .nav-bar{
+        flex-direction: column;
+        align-items: center;
+        gap:30px;
+    }
+    
+       .navbar-part ul {
+        flex-direction: column;
+        padding:0;
+        align-items: flex-start!important;
+        gap: 10px;
+    }
+   
+    .banner-txt h1 {
+        font-size: 9vw;
+        line-height: 52px;
+    }
+    .banner-txt p{
+        padding:0;
+    }
+    .banner-img img{
+        width: 100%;
+        height: 400px;
+        
+      
+    }
+    header{
+        padding-bottom:none;
+    }
+    .banner{
+        padding: 100px 27px 50px;
+    }
+    .feature{
+        flex-direction: column;
+    }
+    .feature-img{
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+        width: 100%;
+    }
+    .feature-txt{
+       width:100%;
+       text-align: center;
+      
+       margin:7% 0;
+        
+    }
+    .feature-love{
+       flex-direction: column;
+    
+    }
+    .feature-love-txt {
+       width:100%;
+    }
+    .feature-love-txt div h3 {
+       
+        font-size: 36px;
+        line-height: 40px;
+        padding-left: 19px;
+        border-left: 3px solid #FF900E;
+        
+    }
+    .feature-love-img{
+        width:100%;
+        margin-top: 10%;
+    }
+    .feature-love-img img{
+        width: 100%;
+    }
+    button.btn-secondary {
+      
+        left: 0%;
+        top: 90%;
+    }
+    .facts {
+       width:100%;
+        text-align: center;
+    }
+    .all-facts{
+        flex-direction: column;
+        align-items: center;
+        gap:20px;
+    }
+    .fact{
+        width: 50%;
+      
+    }
+    .sponsers-title{
+        width: 100%;
+        text-align: center;
+    }
+    .sponsers-title p {
+        
+        text-align: center;
+        color: #727272;
+       padding:0;
+        margin: 6% 0 15%;
+    }
+    .sponsers-all{
+        flex-direction: column;
+align-items: center;
+gap:50px;
+    }
+    .sponsers-all img{
+        width: 40%;
+        height: 50px;
+       
+    }
 }
